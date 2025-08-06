@@ -9,3 +9,9 @@ body {
 }
 
 /*Estilo para CONTENEDORES principales*/
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
