@@ -165,7 +165,12 @@ const Home = () => {
         placeholder="Buscar producto.."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{ padding: "8px", marginBottom: "20px", width: "100%", maxWidth: "400px"}}
+        style={{
+           padding: "8px", 
+           marginBottom: "20px", 
+           width: "100%", 
+           maxWidth: "400px"
+          }}
         />
 
         {/*grid*/}
