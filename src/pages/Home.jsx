@@ -130,12 +130,14 @@ const Home = () => {
                 placeholder="Ingrese el titulo"
                 value={titleEdit}
                 onChange={(e) => setTitleEdit(e.target.value)}
+                required
               />
               <input
                 type="number"
                 placeholder="Ingrese el precio"
                 value={priceEdit}
                 onChange={(e) => setPriceEdit(e.target.value)}
+                required
               />
               <textarea
                 placeholder="Ingrese la descripción"
@@ -147,12 +149,14 @@ const Home = () => {
                 placeholder="Ingrese la categoria"
                 value={categoryEdit}
                 onChange={(e) => setCategoryEdit(e.target.value)}
+                required
               />
               <input
                 type="text"
                 placeholder="Ingrese la URL de la imagen"
                 value={imageEdit}
                 onChange={(e) => setImageEdit(e.target.value)}
+                required
               />
               <button>Actualizar</button>
             </form>
