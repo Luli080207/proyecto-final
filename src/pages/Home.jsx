@@ -162,6 +162,7 @@ const Home = () => {
             <p>{product.description}</p>
             <p><strong>{product.category}</strong></p>
           {user && (
+            /*fragment react*/
             <>
             <button onClick={() => handleOpenEdit(product)}>actualizar</button>
             <button onClick={() => handleDelete(product.id)}>borrar</button>
