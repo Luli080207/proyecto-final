@@ -120,6 +120,14 @@ const Home = () => {
         <h2>Nuestros productos</h2>
         <p>Elegí entre nuestras categorías más populares.</p>
 
+        <input
+        type="text"
+        placeholder="Buscar producto.."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        style={{ padding: "8px", marginBottom: "20px", width: "100%", maxWidth: "400px"}}
+        />
+
 
         {
           showPopup && <section className="popup-edit">
