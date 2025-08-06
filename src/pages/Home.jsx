@@ -11,7 +11,9 @@ const Home = () => {
   const [priceEdit, setPriceEdit] = useState("")
   const [descriptionEdit, setDescriptionEdit] = useState("")
   const [categoryEdit, setCategoryEdit] = useState("")
-  const [imageEdit, setImageEdit] = useState("")
+  const [imageEdit, setImageEdit] = useState
+  ("")
+  const [searchTerm, setSearchTerm] = useState("");
 
   // simulando existencia del usuario, proximamente este estado será global
   const { user } = useAuth()
