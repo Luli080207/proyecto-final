@@ -153,7 +153,30 @@ const Home = () => {
           </section>
         }
 
+      <div className="product-grid">
+        {products.map((product))=> (
+          <div className="product-card" key={product.id}>
+            <h2>{product.title}</h2>
+            <img width= "80px" src={product.image} alt={`Imagen de ${product.title}`}/>
+            <p>${product.price}</p>
+            <p>{product.description}</p>
+            <p><strong>{product.category}</strong></p>
+          {user && (
+            <>
+            <button onClick={() => handleOpenEdit(product)}>actualizar</button>
+            <button onClick={() => handleDelete(product.id)}>borrar</button>
+            </>
+          )}
+          </div>>
+        ))}
+        </div>
+        
       
+          
+        )
+        }
+
+      </div>
       </section>
     </Layout>
   )
