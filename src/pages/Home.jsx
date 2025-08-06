@@ -15,6 +15,11 @@ const Home = () => {
   ("")
   const [searchTerm, setSearchTerm] = useState("");
 
+  /*espacio para que se vea mas organizado*/
+  const filteredProducts = products.filter((product) => 
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
   // simulando existencia del usuario, proximamente este estado será global
   const { user } = useAuth()
 
