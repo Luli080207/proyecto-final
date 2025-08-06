@@ -7,6 +7,7 @@ import { UserProvider } from './context/UserContext'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.css'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserProvider>
