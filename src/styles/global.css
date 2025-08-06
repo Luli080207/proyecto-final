@@ -1,3 +1,5 @@
+/*Colores y fuentes GLOBALES*/
+
 body {
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
@@ -5,3 +7,5 @@ body {
   padding: 0;
   color: #333;
 }
+
+/*Estilo para CONTENEDORES principales*/
