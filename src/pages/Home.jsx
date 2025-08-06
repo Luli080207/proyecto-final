@@ -14,6 +14,7 @@ const Home = () => {
   const [imageEdit, setImageEdit] = useState
   ("")
   const [searchTerm, setSearchTerm] = useState("");
+  const [error, setError] = useState("");
 
   /*espacio para que se vea mas organizado*/
   const filteredProducts = products.filter((product) => 
@@ -158,6 +159,7 @@ const Home = () => {
                 onChange={(e) => setImageEdit(e.target.value)}
                 required
               />
+              {error && <p className="error">{error}</p>}
               <button>Actualizar</button>
             </form>
           </section>
