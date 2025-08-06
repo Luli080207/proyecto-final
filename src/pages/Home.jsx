@@ -176,7 +176,7 @@ const Home = () => {
         {/*grid*/}
 
       <div className="product-grid">
-        {products.map((product)=> (
+        {filteredProducts.map((product)=> (
           <div className="product-card" key={product.id}>
             <h2>{product.title}</h2>
             <img width= "80px" src={product.image} alt={`Imagen de ${product.title}`}/>
