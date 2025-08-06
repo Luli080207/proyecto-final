@@ -58,6 +58,17 @@ const Home = () => {
   const handleUpdate = async (e) => {
     e.preventDefault()
 
+    //validaciones manuales
+    
+    if (!titleEdit || !priceEdit || !descriptionEdit || !categoryEdit || !imageEdit) {
+      setError("Completá los campos obligatorios.");
+      return;
+    }
+
+    setError("");
+
+  
+
     const updatedProduct = {
       id: productToEdit.id,
       title: titleEdit,
@@ -159,7 +170,8 @@ const Home = () => {
                 onChange={(e) => setImageEdit(e.target.value)}
                 required
               />
-              {error && <p className="error">{error}</p>}
+              {/*mostrar error si hay*/}
+              {error && <p className="error-message">{error}</p>}
               <button>Actualizar</button>
             </form>
           </section>
