@@ -9,28 +9,31 @@ const Header = () => {
   }
 
   return (
-    <header style={{ backgroundColor: "lightblue" }}>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Logo-Test.png" alt="imagen de logo" />
+    <header style={{ backgroundColor: "lightblue", padding "10px" }}>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Logo-Test.png" 
+      alt="imagen de logo" 
+      style={{height: "50px", marginRight: "20px"}}
+      />
+
+
       <nav>
-        <ul>
-          {/* Cambiar elementos a por componentes Link de react-router-dom */}
-          {
-            user && <>
+        <ul style={{ display: "flex", gap: "15px", listStyle"none"}}>
               <li><Link to="/">Inicio</Link></li>
+              {user ? (
+                <>
               <li><Link to="/dashboard">Dashboard</Link></li>
               <button onClick={handleLogout}>Cerrar sesión</button>
             </>
-          }
-          {
-            !user && <>
+             ) : (
+             <>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/registrate">Registrate</Link></li>
             </>
-          }
+          )}
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export { Header }
