@@ -5,6 +5,7 @@ import { Login } from "../pages/Login"
 import { Register } from "../pages/Register"
 import { NotFound } from "../pages/NotFound"
 import { PrivateRoute } from "../components/PrivateRoute"
+import About from "../pages/about"
 
 const RouterApp = () => {
   return (
